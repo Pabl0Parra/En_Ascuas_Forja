@@ -11,6 +11,8 @@ import {
 
 import "./sign-in-form.styles.scss";
 
+import { toast } from "react-toastify";
+
 const defaultFormFields = {
   email: "",
   password: "",
@@ -42,13 +44,17 @@ const SignInForm = () => {
     } catch (error) {
       switch (error.code) {
         case "auth/wrong-password":
-          alert("incorrect password for email");
+          toast.error("incorrect password for email", {
+            position: toast.POSITION.TOP_CENTER,
+          });
           break;
         case "auth/user-not-found":
-          alert("no user associated with this email");
+          toast.warning("no user associated with this email", {
+            position: toast.POSITION.TOP_CENTER,
+          });
           break;
         default:
-          console.log(error);
+          toast.error(error);
       }
     }
   };

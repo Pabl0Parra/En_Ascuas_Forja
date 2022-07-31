@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 import FormInput from "../form-input/form-input.component";
 import Button from "../button/button.component";
@@ -29,7 +30,7 @@ const SignUpForm = () => {
     event.preventDefault();
 
     if (password !== confirmPassword) {
-      alert("passwords do not match");
+      toast.error("passwords do not match");
       return;
     }
 
@@ -43,9 +44,13 @@ const SignUpForm = () => {
       resetFormFields();
     } catch (error) {
       if (error.code === "auth/email-already-in-use") {
-        alert("Cannot create user, email already in use");
+        toast.error("Cannot create user, email already in use", {
+          position: toast.POSITION.TOP_CENTER,
+        });
       } else {
-        console.log("user creation encountered an error", error);
+        toast.error("user creation encountered an error", error, {
+          position: toast.POSITION.TOP_CENTER,
+        });
       }
     }
   };
