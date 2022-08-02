@@ -1,13 +1,20 @@
-import { useState, createContext } from "react";
+import { useState, createContext, useEffect } from "react";
 
-import PRODUCTS from "../shop.data.json";
+import { addCollectionAndDocuments } from "../utils/firebase/firebase.utils.js";
+
+import SHOP_DATA from "../shop_data.js";
 
 export const ProductsContext = createContext({
   products: [],
 });
 
 export const ProductsProvider = ({ children }) => {
-  const [products, setProducts] = useState(PRODUCTS);
+  const [products, setProducts] = useState([]);
+  // this is the way we connect our DB with Firebase, it only happens once, then gets deleted from code!!
+  useEffect(() => {
+    addCollectionAndDocuments("categories", SHOP_DATA);
+  }, []);
+
   const value = { products };
 
   return (
