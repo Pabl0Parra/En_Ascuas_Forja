@@ -8,6 +8,7 @@ import { CategoriesProvider } from "./contexts/categories.context";
 import { CartProvider } from "./contexts/cart.context";
 
 import "./index.scss";
+import FooterContainer from "./components/footer-container/footer-container.component";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -18,6 +19,7 @@ root.render(
         <CategoriesProvider>
           <CartProvider>
             <App />
+            <FooterContainer />
           </CartProvider>
         </CategoriesProvider>
       </UserProvider>
