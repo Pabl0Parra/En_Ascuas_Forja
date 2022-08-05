@@ -8,6 +8,8 @@ import {
   signInWithGooglePopup,
 } from "../../utils/firebase/firebase.utils";
 
+import { toast } from "react-toastify";
+
 import { SignInContainer, ButtonsContainer } from "./sign-in-form.styles";
 
 const defaultFormFields = {
@@ -34,7 +36,7 @@ const SignInForm = () => {
       await signInAuthUserWithEmailAndPassword(email, password);
       resetFormFields();
     } catch (error) {
-      console.log("user sign in failed", error);
+      toast.error("user sign in failed");
     }
   };
 
@@ -50,27 +52,27 @@ const SignInForm = () => {
       <span>Sign in with your email and password</span>
       <form onSubmit={handleSubmit}>
         <FormInput
-          label="Email"
-          type="email"
+          label='Email'
+          type='email'
           required
           onChange={handleChange}
-          name="email"
+          name='email'
           value={email}
         />
 
         <FormInput
-          label="Password"
-          type="password"
+          label='Password'
+          type='password'
           required
           onChange={handleChange}
-          name="password"
+          name='password'
           value={password}
         />
         <ButtonsContainer>
-          <Button type="submit">Sign In</Button>
+          <Button type='submit'>Sign In</Button>
           <Button
             buttonType={BUTTON_TYPE_CLASSES.google}
-            type="button"
+            type='button'
             onClick={signInWithGoogle}
           >
             Google Sign In

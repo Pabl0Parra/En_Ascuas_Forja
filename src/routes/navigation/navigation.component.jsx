@@ -24,19 +24,19 @@ const Navigation = () => {
   return (
     <Fragment>
       <NavigationContainer>
-        <LogoContainer to="/">
-          <img src={logo} alt="logo" />
+        <LogoContainer to='/'>
+          <img src={logo} alt='logo' />
         </LogoContainer>
         <NavLinks>
-          <NavLink className="nav-link" to="/shop">
+          <NavLink className='nav-link' to='/shop'>
             SHOP
           </NavLink>
           {currentUser ? (
-            <NavLink as="span" onClick={signOutUser}>
+            <NavLink as='span' onClick={signOutUser}>
               SIGN OUT
             </NavLink>
           ) : (
-            <NavLink to="/auth">SIGN IN</NavLink>
+            <NavLink to='/auth'>SIGN IN</NavLink>
           )}
           <CartIcon />
         </NavLinks>

@@ -9,6 +9,7 @@ import {
 } from "../../utils/firebase/firebase.utils";
 
 import { SignUpContainer } from "./sign-up-form.styles";
+import { toast } from "react-toastify";
 
 const defaultFormFields = {
   displayName: "",
@@ -29,7 +30,7 @@ const SignUpForm = () => {
     event.preventDefault();
 
     if (password !== confirmPassword) {
-      alert("passwords do not match");
+      toast.error("passwords do not match");
       return;
     }
 
@@ -43,9 +44,9 @@ const SignUpForm = () => {
       resetFormFields();
     } catch (error) {
       if (error.code === "auth/email-already-in-use") {
-        alert("Cannot create user, email already in use");
+        toast.warning("Cannot create user, email already in use");
       } else {
-        console.log("user creation encountered an error", error);
+        toast.error("user creation encountered an error");
       }
     }
   };
