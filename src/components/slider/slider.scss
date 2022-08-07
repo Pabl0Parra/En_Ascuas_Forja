@@ -2,7 +2,8 @@
     position: relative;
     margin-bottom: 1rem;
     max-height: 500px;
-    overflow: hidden;
+    margin-bottom: 50px;
+    
   }
   
   .slider_button {
@@ -49,18 +50,18 @@
   }
   
   .slider_item--dark {
-    color:black;
+    color:rgb(255, 255, 255);
   }
   
-  .slider_img {
-    height: 100%;
+  .slider_img {   
+    height: 500px;
     width: 100vw;
   }
   
   .slider_info {
     position: absolute;
-    top: 50px;
-    left: 150px;
+    top: 40px;
+    left: 50px;
     width: 30%;
     text-align: left;
     z-index: 10;

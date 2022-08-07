@@ -68,7 +68,7 @@ export default function Slider() {
             >
               <img
                 src={slide.image}
-                alt='StarWars content'
+                alt='forja-previews'
                 className={"slider_img"}
               />
               <div className={`slider_info slider_info--${slide.color}`}>

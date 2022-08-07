@@ -59,17 +59,18 @@
     top: 0;
     left: 0;
     max-width: 100%;
-    filter: brightness(50%);
+    filter: brightness(100%);
   }
   
   .summary_bg--blur {
-    filter: brightness(25%) blur(2px);
+    // filter: brightness(25%) blur(2px);
   }
   
   .summary_title {
     display: inline-block;
     padding: 1em 1em 0;
     font-size: 0.9rem;
+    color:white
   }
   
   @keyframes progress-animation {
