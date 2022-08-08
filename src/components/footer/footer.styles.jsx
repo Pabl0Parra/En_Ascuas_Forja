@@ -2,10 +2,12 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   padding: 80px 60px;
-  background: radial-gradient(
-    circle,
-    rgba(92, 39, 251, 1) 0%,
-    rgba(112, 71, 247, 1) 100%
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    225deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 92, 121, 1) 55%,
+    rgba(0, 212, 255, 1) 100%
   );
   @media (max-width: 1000px) {
     padding: 70px 30px;

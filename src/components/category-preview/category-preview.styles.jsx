@@ -11,6 +11,10 @@ export const Title = styled(Link)`
   font-size: 28px;
   margin-bottom: 25px;
   cursor: pointer;
+
+  &:hover {
+    color: red;
+  }
 `;
 export const Preview = styled.div`
   display: grid;

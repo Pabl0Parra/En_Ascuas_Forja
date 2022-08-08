@@ -20,6 +20,8 @@
     },
     "peacock.color": "#dd0531",
     "cSpell.ignoreWords": [
-        "Yeezy"
+        "Yeezy",
+        "reduxjs",
+        "toastify"
     ]
 }
