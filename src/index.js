@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 
 import App from "./App";
-import { CategoriesProvider } from "./contexts/categories.context";
+
 import { CartProvider } from "./contexts/cart.context";
 import { store } from "./store/store";
 
@@ -18,12 +18,10 @@ root.render(
     {/* // once we wrapped App with Provider, Redux store can access the whole app */}
     <Provider store={store}>
       <BrowserRouter>
-        <CategoriesProvider>
-          <CartProvider>
-            <App />
-            <FooterContainer />
-          </CartProvider>
-        </CategoriesProvider>
+        <CartProvider>
+          <App />
+          <FooterContainer />
+        </CartProvider>
       </BrowserRouter>
     </Provider>
   </React.StrictMode>
