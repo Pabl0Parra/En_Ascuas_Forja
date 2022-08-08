@@ -30,6 +30,7 @@ export default function CardSummary({
               className={
                 current === index ? "summary_bg summary_bg--blur" : "summary_bg"
               }
+              loading='lazy'
             />
             <span className='summary_title'>{card.title}</span>
           </span>

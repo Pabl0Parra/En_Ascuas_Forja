@@ -51,6 +51,7 @@ export const DirectoryItemContainer = styled.div`
     margin-left: 7.5px;
   }
   &:hover {
+    color: red;
     cursor: pointer;
     ${BackgroundImage} {
       transform: scale(1.1);

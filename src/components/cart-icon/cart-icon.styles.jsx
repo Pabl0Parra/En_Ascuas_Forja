@@ -9,6 +9,10 @@ export const CartIconContainer = styled.div`
   justify-content: center;
   cursor: pointer;
 
+  &:hover {
+    color: red;
+  }
+
   svg {
     width: 24px;
     height: 24px;

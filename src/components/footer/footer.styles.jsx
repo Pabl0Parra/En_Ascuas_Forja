@@ -18,7 +18,6 @@ export const Wrapper = styled.div`
   justify-content: center;
   max-width: 1000px;
   margin: 0 auto;
-  /* background: red; */
 `;
 
 export const Column = styled.div`
@@ -43,7 +42,7 @@ export const Link = styled.a`
   font-size: 18px;
   text-decoration: none;
   &:hover {
-    color: #ff9c00;
+    color: red;
     transition: 200ms ease-in;
   }
 `;
