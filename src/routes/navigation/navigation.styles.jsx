@@ -4,8 +4,12 @@ import { Link } from "react-router-dom";
 export const NavigationContainer = styled.div`
   height: 70px;
   width: 100%;
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
+  background: white;
+  z-index: 101;
 `;
 
 export const LogoContainer = styled(Link)`

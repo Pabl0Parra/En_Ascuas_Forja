@@ -70,7 +70,6 @@ export default function Slider() {
                 src={slide.image}
                 alt='forja-previews'
                 className={"slider_img"}
-                loading='lazy'
               />
               <div className={`slider_info slider_info--${slide.color}`}>
                 <h2>{slide.title}</h2>
