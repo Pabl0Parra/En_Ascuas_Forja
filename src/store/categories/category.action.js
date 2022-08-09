@@ -15,6 +15,7 @@ export const fetchCategoriesSuccess = (categoriesArray) =>
 export const fetchCategoriesFailure = (error) =>
   createAction(CATEGORIES_ACTION_TYPES.FETCH_CATEGORIES_FAILED, error);
 
+// this is the new function with redux-thunk that allows me to create the above actions
 export const fetchCategoriesStartAsync = () => {
   return async (dispatch) => {
     dispatch(fetchCategoriesStart());

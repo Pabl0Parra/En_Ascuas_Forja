@@ -7,12 +7,14 @@
     display: flex;
     justify-content: center;
     z-index: 10;
+    
   }
   
   .summary_card {
     position: relative;
-    height: 90px;
+    height: 70px;
     width: 200px;
+    border: 0.5px solid rgb(204, 186, 186);
     margin-right: 1.5em;
     text-align: left;
     cursor: pointer;
@@ -63,7 +65,7 @@
   }
   
   .summary_bg--blur {
-    // filter: brightness(25%) blur(2px);
+    filter: brightness(25%) blur(2px);
   }
   
   .summary_title {
