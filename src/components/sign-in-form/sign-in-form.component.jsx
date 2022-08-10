@@ -4,8 +4,6 @@ import { useDispatch } from "react-redux";
 import FormInput from "../form-input/form-input.component";
 import Button, { BUTTON_TYPE_CLASSES } from "../button/button.component";
 
-import { toast } from "react-toastify";
-
 import { SignInContainer, ButtonsContainer } from "./sign-in-form.styles";
 import {
   googleSignInStart,
@@ -37,7 +35,7 @@ const SignInForm = () => {
       dispatch(emailSignInStart(email, password));
       resetFormFields();
     } catch (error) {
-      toast.error("user sign in failed");
+      console.log("user sign in failed", error);
     }
   };
 
