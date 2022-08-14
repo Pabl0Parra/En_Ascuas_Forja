@@ -6,6 +6,7 @@ export const NavigationContainer = styled.div`
   width: 100%;
   position: sticky;
   top: 0;
+  box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
   display: flex;
   justify-content: space-between;
   background: white;

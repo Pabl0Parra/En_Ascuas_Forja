@@ -2,9 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 import ContactFormInput from "../../components/form-input/form-input.component";
-import Button, {
-  BUTTON_TYPE_CLASSES,
-} from "../../components/button/button.component";
+import { BUTTON_TYPE_CLASSES } from "../../components/button/button.component";
 
 import {
   ContactContainer,
@@ -15,6 +13,8 @@ import {
   LogoContainer,
   SubmitButton,
 } from "./contact.styles";
+
+import logo from "../../assets/logo.svg";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -58,7 +58,10 @@ const Contact = () => {
     <ContactContainer>
       <ContactForm onSubmit={handleFormSubmission}>
         <ContactFormHeader>
-          <LogoContainer></LogoContainer>
+          <LogoContainer>
+            {" "}
+            <img src={logo} alt='logo' />
+          </LogoContainer>
           <ContactTitle>Have a question?</ContactTitle>
         </ContactFormHeader>
         <ContactSubtitle>Please fill out the following fields.</ContactSubtitle>

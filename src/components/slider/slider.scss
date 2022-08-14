@@ -2,10 +2,15 @@
     position: relative;
     margin-bottom: 3rem;
     height: 400px; 
-    
+    padding-left: 0 !important;
+     margin-left: 0 !important;
     overflow: hidden;
     z-index: 100;    
   }
+
+.slider_container {
+  padding: 0;
+}
   
   .slider_button {
     position: absolute;
@@ -78,7 +83,7 @@
   }
   
   .slider_info a {
-    padding: 15px 32px;
+    
     color: white;
     border-radius: 2px;
     font-size: 1rem;
