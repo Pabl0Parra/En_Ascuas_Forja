@@ -2,7 +2,6 @@ import styled, { css } from "styled-components";
 
 const subColor = "grey";
 const mainColor = "black";
-const activeColor = "red";
 
 const shrinkLabelStyles = css`
   top: -14px;
@@ -36,7 +35,6 @@ export const Input = styled.input`
   margin: 25px 0;
   &:focus {
     outline: none;
-    border-bottom: 1px solid ${activeColor};
   }
   &:focus ~ ${FormInputLabel} {
     ${shrinkLabelStyles};
