@@ -9,6 +9,7 @@ import { FormContainer } from "./payment-form.styles";
 import { BUTTON_TYPE_CLASSES } from "../button/button.component";
 
 import { PaymentButton, PaymentFormContainer } from "./payment-form.styles";
+import { toast } from "react-toastify";
 
 const PaymentForm = () => {
   const stripe = useStripe();
@@ -47,10 +48,10 @@ const PaymentForm = () => {
     setIsProcessingPayment(false);
 
     if (paymentResult.error) {
-      alert(paymentResult.error.message);
+      toast.error(paymentResult.error.message);
     } else {
       if (paymentResult.paymentIntent.status === "succeeded") {
-        alert("Payment Successful!");
+        toast.success("Payment Successful!");
       }
     }
   };
