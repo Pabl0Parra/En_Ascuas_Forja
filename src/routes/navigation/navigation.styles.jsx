@@ -25,6 +25,10 @@ export const NavLinks = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
 `;
 export const NavLink = styled(Link)`
   padding: 10px 15px;
