@@ -1,5 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 
+import ClickAwayListener from "@mui/base/ClickAwayListener";
+
 import {
   selectCartCount,
   selectIsCartOpen,
@@ -19,11 +21,15 @@ const CartIcon = () => {
 
   const toggleIsCartOpen = () => dispatch(setIsCartOpen(!isCartOpen));
 
+  const handleClickAway = () => {};
+
   return (
-    <CartIconContainer onClick={toggleIsCartOpen}>
-      <ShoppingIcon className='shopping-icon' />
-      <ItemCount>{cartCount}</ItemCount>
-    </CartIconContainer>
+    <ClickAwayListener onClickAway={handleClickAway}>
+      <CartIconContainer onClick={toggleIsCartOpen}>
+        <ShoppingIcon className='shopping-icon' />
+        <ItemCount>{cartCount}</ItemCount>
+      </CartIconContainer>
+    </ClickAwayListener>
   );
 };
 
