@@ -51,7 +51,7 @@ const Contact = () => {
   };
 
   useEffect(() => {
-    document.title = "Contact Us | CRWN Clothing";
+    document.title = "Contact Us |  Taifa Clothing";
   }, []);
 
   return (

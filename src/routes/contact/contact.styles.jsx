@@ -60,11 +60,6 @@ export const LogoContainer = styled.div`
   }
 `;
 
-// export const CrwnLogo = styled(Logo)`
-//   width: 100%;
-//   height: auto;
-// `;
-
 export const SubmitButton = styled(Button)`
   margin: 0 auto;
 `;
