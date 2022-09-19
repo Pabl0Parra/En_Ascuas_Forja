@@ -14,7 +14,7 @@ import {
   SubmitButton,
 } from "./contact.styles";
 
-import logo from "../../assets/logo.svg";
+import logo from "../../assets/logo-color.svg";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -60,7 +60,7 @@ const Contact = () => {
         <ContactFormHeader>
           <LogoContainer>
             {" "}
-            <img src={logo} alt='logo' />
+            <img src={logo} alt='logo' className='logo' />
           </LogoContainer>
           <ContactTitle>Have a question?</ContactTitle>
         </ContactFormHeader>

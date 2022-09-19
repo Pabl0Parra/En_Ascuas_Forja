@@ -1,4 +1,4 @@
-import logo from "../../assets/logo.svg";
+import logo from "../../assets/logo-color.svg";
 
 import { Fragment } from "react";
 import { Outlet } from "react-router-dom";
@@ -30,7 +30,7 @@ const Navigation = () => {
     <Fragment>
       <NavigationContainer>
         <LogoContainer to='/'>
-          <img src={logo} alt='logo' />
+          <img src={logo} alt='logo' className='logo' />
         </LogoContainer>
         <NavLinks>
           <NavLink to='/shop'>SHOP</NavLink>
