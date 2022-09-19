@@ -9,6 +9,7 @@ export const NavigationContainer = styled.div`
   box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background: white;
   z-index: 101;
 `;
