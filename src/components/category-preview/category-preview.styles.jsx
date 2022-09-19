@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 export const CategoryPreviewContainer = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-bottom: 30px;
+  padding: 10px;
 `;
 
 export const Title = styled(Link)`
