@@ -15,7 +15,7 @@ export const DirectoryTitle = styled.h1`
   flex-wrap: wrap;
   align-content: center;
   align-items: center;
-  font-size: 38px;
+  font-size: 36px;
   transition: all 0.5s ease-in-out;
   margin-bottom: 2rem;
   animation: zoomInUp; 
@@ -23,8 +23,10 @@ export const DirectoryTitle = styled.h1`
   
   &:hover {
     color: #f43030;
-    font-size: 40px;   
+    font-size: 38px;   
   }
+
+  
 
   @media screen and (max-width: 600px) {
     font-size: 14px;
