@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import "animate.css";
 
 export const NavigationContainer = styled.div`
   height: 70px;
@@ -18,6 +19,8 @@ export const LogoContainer = styled(Link)`
   height: 100%;
   width: 70px;
   padding: 20px;
+  animation: lightSpeedInRight;
+  animation-duration: 2.5s;
 `;
 
 export const NavLinks = styled.div`
@@ -31,9 +34,12 @@ export const NavLinks = styled.div`
     display: none;
   }
 `;
+
 export const NavLink = styled(Link)`
   padding: 10px 15px;
   cursor: pointer;
+  animation: fadeInDown;
+  animation-duration: 2s;
 
   &:hover {
     color: #ff7878;

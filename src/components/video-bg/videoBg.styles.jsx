@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import "animate.css";
 
 export const VideoBgContainer = styled.div`
   position: relative;
@@ -10,4 +11,6 @@ export const VideoBgContainer = styled.div`
   overflow: hidden;
   z-index: 100;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.8);
+  animation: fadeIn;
+  animation-duration: 4s;
 `;

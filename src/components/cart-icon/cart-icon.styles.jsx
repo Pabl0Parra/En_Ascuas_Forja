@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import "animate.css";
 
 export const CartIconContainer = styled.div`
   width: 45px;
@@ -8,6 +9,8 @@ export const CartIconContainer = styled.div`
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  animation: zoomInUp;
+  animation-duration: 2.5s;
 
   &:hover {
     color: red;
