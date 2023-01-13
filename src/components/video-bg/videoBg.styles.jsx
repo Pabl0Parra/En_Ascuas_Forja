@@ -9,4 +9,5 @@ export const VideoBgContainer = styled.div`
   margin-left: 0 !important;
   overflow: hidden;
   z-index: 100;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.8);
 `;
