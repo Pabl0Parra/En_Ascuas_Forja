@@ -1,9 +1,8 @@
-@import url('http://fonts.cdnfonts.com/css/gotham');
+@import url("http://fonts.cdnfonts.com/css/gotham");
 
 body {
   margin: 0;
   font-family: "Gotham", sans-serif;
-
 }
 
 code {
@@ -18,11 +17,19 @@ a {
 
 .logo {
   height: 70px;
-  
-  }
+}
 // * {
 //   box-sizing: border-box;
-  // &:focus {
-  //   outline: none;
+// &:focus {
+//   outline: none;
 // }
 // }
+
+@media (max-width: 600px) {
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-left: -20px;
+  }
+}
