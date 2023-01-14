@@ -11,12 +11,12 @@ const Shop = () => {
 
   useEffect(() => {
     dispatch(fetchCategoriesStart());
-  }, []);
+  });
 
   return (
     <Routes>
       <Route index element={<CategoriesPreview />} />
-      <Route path=':category' element={<Category />} />
+      <Route path=":category" element={<Category />} />
     </Routes>
   );
 };
