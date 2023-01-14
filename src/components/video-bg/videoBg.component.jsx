@@ -9,9 +9,6 @@ const VideoBg = () => (
       autoPlay
       loop
       muted
-      style={{
-        objectFit: "cover",
-      }}
     />
   </VideoBgContainer>
 );
